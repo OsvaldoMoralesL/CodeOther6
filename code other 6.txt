@@ -1,0 +1,37 @@
+code other 6
+
+Osvaldo Morales Lopez
+
+
+
+package codeother6;
+
+public class Codeother6 {
+
+	public static void main(String[] args) {
+	
+	    int[] n = new int [20];// se crepara con new al iniciar nuevo
+
+	    for (int i = 0; i < 20; i++) {   //signo de + para comenzar a agregar de uno
+	      i = (int)(Math.random() * 381) + 20;
+	      System.out.print(i + " "); //system.out.print
+	    }
+	    
+	    System.out.println("\n¿Qué números quiere resaltar? ");
+	    System.out.print("(1 – los múltiplos de 5, 2 – los múltiplos de 7): ");
+	    int opcion  = Integer.parseInt(System.console().readLine());
+
+	    int multiplo = (opcion == 1) ?  5 : 7;//
+
+	    for (int e : n) {  //se retira each de otra manera no detiene, de igual manera se cambioa la variable por "int" como se muestra arriba
+	      if (e % multiplo == 0) {
+	        System.out.print("[" + e + "] ");
+	      }else {						//cierra llave
+	        System.out.print(e + " ");//out para imprimir, en vez de in
+	      }
+	    }
+		
+
+	}
+
+}
