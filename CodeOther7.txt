@@ -1,0 +1,56 @@
+CodeOther7
+Osvaldo Morales Lopez
+
+
+package codeother6;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class CodeOther7 {
+
+	public static void main(String[] args) {
+		
+		//public class Código7 {
+
+		    Scanner s = new Scanner(System.in);  //se importa el scanner
+
+		    HashMap<String,String> ca = new HashMap<>(); //colocar correctamente la entrada de tipos de datos importsr hash map
+
+		    Object capitales;
+			capitales.put("Canadá", "Otawwa");
+		    capitales.put("Estados Unidos", "Washington DC");
+		    capitales.put("México", "México DF");
+		    capitales.put("Belice", "Belmopán");
+		    capitales.put("Costa rica", "San José");
+		    capitales.put("El Salvador");
+		    capitales.put("Guatemala", "Ciudad de Guatemala");
+		    capitales.put("Honduras", "Tegucigalpa");
+		    capitales.put("Nicaragua", "Managua");
+		    capitales.put("Panamá", "Panamá");
+		   
+		    String c = "";
+		    do {
+		      System.out.println("Escribe el nombre de un país y te diré su capital: ");
+		      c = s.nextLine();
+		      
+		      if (!c.equals("salir")) {  //colocar la s en equals
+		        if (ca.containsValue(c)) {
+		          System.out.println("La capital de " + c);
+		          System.out.println(" es " + ca.get(c));
+		        } else {
+		          System.out.print("No conozco la respuesta ");
+		          System.out.print("¿cuál es la capital de " + c + "?: ");
+		          String capital = s.nextLine();   //Capitals completo por ser 
+		          ca.put(c, ca);
+		          System.out.println("Gracias por enseñarme nuevas capitales");
+		        }
+		      }
+		    } while (!c.equals("salir")); //cerrar parentesis
+		  }
+
+		
+		
+
+	}
+
